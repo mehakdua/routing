@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<a [routerLink]="['']"  [queryParams] ="{analytics:200}">Home</a>
+<a  [routerLink]="['first',id.value]">First</a>
+<input type="text" #id (input)="0"/>
+
+<router-outlet></router-outlet>
+{{param}}
